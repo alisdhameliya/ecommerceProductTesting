@@ -47,12 +47,10 @@ function Home() {
                     filteredProduct.map((p, i) => {
                         return (
                             <Link key={i} to={`/Details/${p.id}`} className="mr-3 mb-3 card p-3 border shadow rounded w-[18%] h-[30vh] flex-col flex justify-center items-center">
-                                <div
+                                <image
                                     className="hover:scale-110 mb-3 w-full h-[80%] bg-contain bg-no-repeat bg-center"
-                                    style={{
-                                        backgroundImage: `url(${p.image})`,
-                                    }}
-                                ></div>
+                                    src={{`url(${p.image})`}}
+                                ></image>
                                 <h1 className="hover:text-blue-300">
                                     {p.title}
                                 </h1>
